@@ -1,0 +1,22 @@
+*{box-sizing: border-box;}
+
+
+
+.section1 {
+    background-color: #eeeeee;
+    height: 500px;
+}
+
+.section2-container {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.male-img {
+    height: 500px;
+    padding-left: 30%;
+}
+
+.description {
+    padding-top: 40%;
+}
