@@ -12,7 +12,7 @@
 <body>
 <header class="header">
     <div class="container">
-        <div class="row">
+        <div class="row top-header top-row justify-content-sm-center">
             <div class="col-6 col-md-8">
                 <nav class="nav top-nav">
                     <a href="#link" class="nav-item"><i class="bi bi-pencil-square"></i>My Wishlist</a>
@@ -24,14 +24,18 @@
             <div class="col-6 col-md-4">
                 <p class="header-text">Welcome visitor you can <a href="#link">login</a>  or <a href="#link">create an account.</a></p>
             </div>
+        </div>
+        <div class="row middle-header row-cols-2 row-cols-sm-1 g-3 justify-content-sm-center">
             <div class="col-6 col-md-8">
-                <h1 class="title-header"><span class="title-span">Ve</span>nedor.</h1>
+                <h1 class="title-header"><span class="title-span">Ve</span>nedor<span class="title-span-end">.</span></h1>
             </div>
-            <div class="col-6 col-md-4">
+            <div class="col-6 col-md-4 buttons">
                 <button class="middle-header-btn">US Dollar</button>
-                <button class="middle-header-btn">English</button>
-                <button class="middle-header-btn"><i class="bi bi-cart-fill">items(0)-$0.00</i></button>
+                <button class="middle-header-btn-middle">English</button>
+                <button class="middle-header-btn-end"><i class="bi bi-cart-fill">items(0)-$0.00</i></button>
             </div>     
+        </div>        
+        <div class="row bottom-header row-cols-2 row-cols-sm-1 g-3 justify-content-sm-center">  
             <div class="col-6 col-md-8">
                 <nav class="bottom-nav">
                     <a href="#link" class="bottom-nav-item">Fashion</a>
@@ -42,7 +46,7 @@
                     <a href="#link" class="bottom-nav-item">Music</a>
                 </nav>
             </div>
-            <div class="col-6 col-md-4">
+            <div class="col-6 col-md-4 ">
                 <input type="text" placeholder="Search here..." name="searchbar">
             </div>
         </div>
@@ -50,7 +54,7 @@
 </header>
 <main>
 <section class="section section1">
-    <div class="container">
+    <div class="container h-80">
         <div id="carouselIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -61,13 +65,14 @@
                 <div class="carousel-item active" id="first-guy">
                     <div class="row">
                         <div class="col-6 justify-content-end">
-                            <img src="./media/Man.jpg" alt="Man Image" class="male-img img-fluid">
+                            <img src="./media/Man.jpg" alt="Man Image" class="male-img img-fluid h-100">
                         </div>
-                        <div class="col-4">
+                        <div class="col-6">
                             <div class="description">
                                 <h3 class="section1-h3">new</h3>
                                 <h3 class="section1-h3-2">men collection</h3>
                                 <p class="section1-text">Explore our new, affordable options for men's apparel. Multiple new items that will be sure to compliment your personal style.</p>
+                                <button class="shop-now-btn">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -104,9 +109,9 @@
                 </div>    
             </div>
         </div>
-        <div class="row col-md-2 g-2">
-            <div class="col">
-                <div class="card" style="width: 18rem;">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2">
+            <div class="boxes col">
+                <div class="card h-100" style="width: 18rem;">
                     <img src="./media/Bracelet.jpg" class="trench-coat-img img-fluid" alt="Bracelet image">
                     <div class="card-body">
                         <p class="card-text">Jewelry Bracelet Cara Accessories</p>
@@ -114,8 +119,8 @@
                     </div>
                 </div>   
             </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
+            <div class="boxes col">
+                <div class="card h-100" style="width: 18rem;">
                     <img src="./media/Trench-Coat.jpg" class="trench-coat-img img-fluid" alt="Trench Coat Image">
                     <div class="card-body">
                         <p class="card-text">Jessica London Short Trench Coat</p>
@@ -123,8 +128,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
+            <div class="boxes col">
+                <div class="card h-100" style="width: 18rem;">
                     <img src="./media/Gloves.jpg" class="gloves-img img-fluid" alt="Gloves Image">
                     <div class="card-body">
                         <p class="card-text">Mocca Stretch Leather Gloves</p>
@@ -132,8 +137,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
+            <div class="boxes col">
+                <div class="card h-100" style="width: 18rem;">
                     <img src="./media/Sweater.jpg" class="sweater-img" alt="Sweater Image">
                     <div class="card-body">
                         <p class="card-text">Limited Edition Knitted Sweater</p>
@@ -163,7 +168,7 @@
     <div class="container">
         <div class="row">
             <div class="col-10">
-                <h2 class="section3-header">Bestsellers</h2>
+                <h2 class="section5-header">Bestsellers</h2>
             </div>
             <div class="col-2">
                 <div class="box">
@@ -172,9 +177,9 @@
                 </div>    
             </div>
         </div>
-        <div class="row col-md-2 g-2">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2">
             <div class="col">
-                <div class="card" style="width: 18rem;">
+                <div class="card h-100" style="width: 18rem;">
                     <img src="./media/Heels.jpg" class="heels-img img-fluid" alt="Heels image">
                     <div class="card-body">
                         <p class="card-text">Branded Heels</p>
@@ -183,7 +188,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="width: 18rem;">
+                <div class="card h-100" style="width: 18rem;">
                     <img src="./media/purse.jpg" class="purse-img img-fluid" alt="Purse Image">
                     <div class="card-body">
                         <p class="card-text">Branded Purse</p>
@@ -192,7 +197,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="width: 18rem;">
+                <div class="card h-100" style="width: 18rem;">
                     <img src="./media/blue-shoes.jpg" class="blue-shoes-img img-fluid" alt="Blue Shoes Image">
                     <div class="card-body">
                         <p class="card-text">Branded Dress Shoes</p>
@@ -201,7 +206,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card" style="width: 18rem;">
+                <div class="card h-100" style="width: 18rem;">
                     <img src="./media/beige-coat.jpg" class="beige-coat-img img-fluid" alt="Beige Coat Image">
                     <div class="card-body">
                         <p class="card-text">Branded Coat</p>
@@ -212,11 +217,11 @@
         </div>
     </div>        
 </section>
-<section class="section section2">
+<section class="section section6">
     <div class="container">
         <div class="row">
             <div class="col-10">
-                <h2 class="section3-header">Bestsellers</h2>
+                <h2 class="section6-header">Manufacturers</h2>
             </div>
             <div class="col-2">
                 <div class="box">
@@ -225,7 +230,7 @@
                 </div>    
             </div>
         </div>
-        <div class="row">
+        <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3">
             <div class="col-2">
                 <img src="./media/Logo.jpg" alt="Logo Image" class="logo-img img-fluid">
             </div>
@@ -247,6 +252,81 @@
         </div>
     </div>    
 </section>
+<footer class="footer">
+    <div class="section top-footer">
+        <div class="container">
+            <div class="row top-footer">
+                <div class="col-6 col-md-5">
+                    <h4 class="top-footer-text">sign up to receive the latest fashion news</h4>
+                </div>
+                <div class="col-4 col-md-3">
+                    <input type="text"name="searchbar" placeholder="Enter your email address" class="top-footer-search">
+                </div>
+                <div class="col-2 col-md-4">
+                    <button class="top-footer-btn">sign up</button>
+                </div>
+            </div>
+         </div>   
+    </div>
+    <div class="section middle-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h4 class="middle-footer-header">my account</h4>
+                    <ul class="footer-square">
+                        <li><a href="link" class="footer-list">My Account</a></li>
+                        <li><a href="link" class="footer-list">Personal Information</a></li>
+                        <li><a href="link" class="footer-list">Addresses</a></li>
+                        <li><a href="link" class="footer-list">Discount</a></li>
+                        <li><a href="link" class="footer-list">Order History</a></li>
+                        <li><a href="link" class="footer-list">Your Vouchers</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h4 class="middle-footer-header">Information</h4>
+                    <ul class="footer-square">
+                        <li><a href="link" class="footer-list">New Products</a></li>
+                        <li><a href="link" class="footer-list">Top Selling</a></li>
+                        <li><a href="link" class="footer-list">Specials</a></li>
+                        <li><a href="link" class="footer-list">Manufacturers</a></li>
+                        <li><a href="link" class="footer-list">Suppliers</a></li>
+                        <li><a href="link" class="footer-list">Our Stores</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h4 class="middle-footer-header">from twitter</h4>
+                    <p class="middle-footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugiat ipsa id eligendi sapiente ad natus assumenda <a href="https://twitter.com/AnnexDevs">https://twitter.com/AnnexDevs</a>.</p>
+
+                    <p class="middle-footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, at! Voluptate esse dolores vero ut <a href="https://twitter.com/AnnexDevs"></a>.</p>
+                </div>
+                <div class="col-3">
+                    <h5 class="middle-footer-header">facebook</h5>
+                    <img src="./media/Facebook-profiles.jpg" alt="Facebook Profiles Image" class="facebook-img img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section bottom-footer">
+        <div class="container">
+            <div class="row bottom-footer">
+                <div class="col-6">
+                    <button class="icons"><i class="bi bi-facebook"></i></button>
+                    <button class="icons"><i class="bi bi-twitter"></i></button>
+                    <button class="icons"><i class="bi bi-rss-fill"></i></button>
+                    <button class="icons"><i class="bi bi-reception-4"></i></button>
+                    <button class="icons"><i class="bi bi-github"></i></button>
+                    <button class="icons"><i class="bi bi-pinterest"></i></button>
+                    <button class="icons"><i class="bi bi-skype"></i></button>
+                    <button class="icons"><i class="bi bi-envelope-fill"></i></button>
+                </div>
+                <div class="col-6">
+                    <p class="bottom-footer-text">&copy;2012 Powered by AnnexDevelopment&trade;. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
 </main>
 </body>
 </html>
