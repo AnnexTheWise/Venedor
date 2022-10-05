@@ -1,333 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Venedor</title>
 </head>
+
 <body>
-<header class="header">
-    <div class="container">
-        <div class="row top-header top-row justify-content-sm-center">
-            <div class="col-6 col-md-8">
-                <nav class="nav top-nav">
-                    <a href="#link" class="nav-item"><i class="bi bi-pencil-square"></i>My Wishlist</a>
-                    <a href="#link" class="nav-item"><i class="bi bi-person-fill"></i>My Account</a>
-                    <a href="#link" class="nav-item"><i class="bi bi-cart-fill"></i>Shopping Cart</a>
-                    <a href="#link" class="nav-item"><i class="bi bi-check-lg"></i>Checkout</a>
-                </nav>
-            </div>
-            <div class="col-6 col-md-4">
-                <p class="header-text">Welcome visitor you can <a href="#link">login</a>  or <a href="#link">create an account.</a></p>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <ul class="top-bar d-none d-md-flex nav nav-bar nav-list">
+                        <li><a href="#link" class="nav-item top-nav-item"><i class="bi bi-pencil-square"></i>My Wishlist</a></li>
+                        <li><a href="#link" class="nav-item top-nav-item"><i class="bi bi-pencil-square"></i>My Account</a></li>
+                        <li><a href="#link" class="nav-item top-nav-item"><i class="bi bi-pencil-square"></i>Shopping Cart</a></li>
+                        <li><a href="#link" class="nav-item top-nav-item"><i class="bi bi-pencil-square"></i>Checkout</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-lg-end">
+                    <p class="header-text">Welcome visitor you can <a href="#link">login</a> or <a href="#link">create
+                            an account.</a></p>
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    <h1 class="title-header"><span class="title-span">Ve</span>nedor<span
+                            class="title-span-end">.</span></h1>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="buttons">
+                        <button class="header-btn">US Dollar</button>
+                        <button class="header-btn">English</button>
+                        <button class="header-btn-end"><i class="bi bi-cart-fill">items(0)-$0.00</i></button>
+                    </div>
+                </div>
+                <div class="col-4 col-md-8">
+                    <ul class=" d-none d-md-flex nav nav-bar nav-list text-center header-nav">
+                        <li><a href="" class="nav-item header-nav-item">Fashion</a></li>
+                        <li><a href="" class="nav-item header-nav-item">Electronics</a></li>
+                        <li><a href="" class="nav-item header-nav-item">Gifts</a></li>
+                        <li><a href="" class="nav-item header-nav-item">Books</a></li>
+                        <li><a href="" class="nav-item header-nav-item">At Home</a></li>
+                        <li><a href="" class="nav-item header-nav-item">Music</a></li>
+                    </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle w-100 d-sm-block d-md-none" type="button"
+                            data-bs-toggle="dropdown" ari>Menu</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="link">Fashion</a></li>
+                            <li><a class="dropdown-item" href="link">Electronics</a></li>
+                            <li><a class="dropdown-item" href="link">Gifts</a></li>
+                            <li><a class="dropdown-item" href="link">Books</a></li>
+                            <li><a class="dropdown-item" href="link">At Home</a></li>
+                            <li><a class="dropdown-item" href="link">Music</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-8 col-md-4 d-flex justify-content-md-end">
+                    <input type="text" placeholder="Search here..." name="searchbar" class="searchbar">
+                </div>
             </div>
         </div>
-        <div class="row middle-header row-cols-2 row-cols-sm-1 g-3 justify-content-sm-center">
-            <div class="col-6 col-md-8">
-                <h1 class="title-header"><span class="title-span">Ve</span>nedor<span class="title-span-end">.</span></h1>
-            </div>
-            <div class="col-6 col-md-4 buttons">
-                <button class="middle-header-btn">US Dollar</button>
-                <button class="middle-header-btn-middle">English</button>
-                <button class="middle-header-btn-end"><i class="bi bi-cart-fill">items(0)-$0.00</i></button>
-            </div>     
-        </div>        
-        <div class="row bottom-header row-cols-2 row-cols-sm-1 g-3 justify-content-sm-center">  
-            <div class="col-6 col-md-8">
-                <nav class="bottom-nav">
-                    <a href="#link" class="bottom-nav-item">Fashion</a>
-                    <a href="#link" class="bottom-nav-item">Electronics</a>
-                    <a href="#link" class="bottom-nav-item">Gifts</a>
-                    <a href="#link" class="bottom-nav-item">Books</a>
-                    <a href="#link" class="bottom-nav-item">At Home</a>
-                    <a href="#link" class="bottom-nav-item">Music</a>
-                </nav>
-            </div>
-            <div class="col-6 col-md-4 ">
-                <input type="text" placeholder="Search here..." name="searchbar">
-                <button class="search-btn"><i class="bi bi-search"></i></button>
-            </div>
-        </div>
-    </div>
-</header>
-<main>
-<section class="section section1">
-    <div class="container ">
-        <div id="carouselIndicators" class="carousel slide" data-bs-ride="true">
+    </header>
+    <section class="section1">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>         
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
-                <div class="carousel-item active" id="first-guy">
+                <div class="container">
                     <div class="row">
-                        <div class="col-6">
-                            <img src="./media/Man.jpg" alt="Man Image" class="male-img img-fluid h-100">
+                        <div class="col-md-6">
+                            <div class="carousel-item active">
+                              <img src="./media/Man.jpg" class="img-fluid" alt="man ">
+                            </div>
                         </div>
-                        <div class="col-6 d-none d-sm-block">
-                            <div class="description">
-                                <h3 class="section1-h3">new</h3>
-                                <h3 class="section1-h3-2">men collection</h3>
-                                <p class="section1-text">Explore our new, affordable options for men's apparel. Multiple new items that will be sure to compliment your personal style.</p>
-                                <button class="shop-now-btn">Shop Now</button>
+                        <div class="col-md-6">
+                            <div class="section1-box">
+                                <p class="section1-header1">new</p>
+                                <p class="section1-header2">men collection</p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur perspiciatis
+                                distinctio delectus molestiae exercitationem asperiores eveniet, dolorem culpa
+                                ipsam? Nesciunt dolorum soluta omnis, totam voluptates quisquam magni accusamus?
+                                Exercitationem voluptatum omnis nemo aliquid fugiat...</p>
+                                <p>
+                                    <button class="shop-now-btn">Shop Now</button>
+                                </p>    
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>    
-</section>
-<section class="section section2">
-    <div class="container section2-container">
-        <div class="row">
-            <div class="col-4">
-                <img src="./media/Free-Shipping.jpg" alt="free shipping image" class="free-shipping-img img-fluid">
-            </div>
-            <div class="col-4">
-                <img src="./media/Sale.jpg" alt="Sale image" class="sale-img img-fluid">
-            </div>
-            <div class="col-4">
-                <img src="./media/New-Arrivals.jpg" alt="new arrivals image" class="new-arrivals-img img-fluid">
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section section3">
-    <div class="container">
-        <div class="row">
-            <div class="col-10">
-                <h2 class="section3-header">Latest</h2>
-            </div>
-            <div class="col-2">
-                <div class="box">
-                    <button><i class="bi bi-chevron-left"></i></button>
-                    <button><i class="bi bi-chevron-right"></i></button>
-                </div>    
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2">
-            <div class="boxes col">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./media/Bracelet.jpg" class="trench-coat-img img-fluid" alt="Bracelet image">
-                    <div class="card-body">
-                        <p class="card-text">Jewelry Bracelet Cara Accessories</p>
-                        <a href="#" class="btn btn-primary">add to cart</a>
-                    </div>
-                </div>   
-            </div>
-            <div class="boxes col">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./media/Trench-Coat.jpg" class="trench-coat-img img-fluid" alt="Trench Coat Image">
-                    <div class="card-body">
-                        <p class="card-text">Jessica London Short Trench Coat</p>
-                        <a href="#" class="btn btn-primary">add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="boxes col">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./media/Gloves.jpg" class="gloves-img img-fluid" alt="Gloves Image">
-                    <div class="card-body">
-                        <p class="card-text">Mocca Stretch Leather Gloves</p>
-                        <a href="#" class="btn btn-primary">add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="boxes col">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./media/Sweater.jpg" class="sweater-img" alt="Sweater Image">
-                    <div class="card-body">
-                        <p class="card-text">Limited Edition Knitted Sweater</p>
-                        <a href="#" class="btn btn-primary">add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>    
-<section class="section section4">
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <h2 class="section4-header">Welcome to Venedor</h2>
-                <p class="section4-text">Venedor is a fully responsive PSD theme designed for all types of platforms.Woocommerce, Magento, OpenCart, PrestaShop and other based on Bootstrap's 12 column 1200px responsive grid template. Great looks on desktop, tablets, and mobile.</p>
-                <p class="section4-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio magnam ipsa nostrum fugit corporis aliquid molestias culpa nemo totam sequi veritatis dignissimos labore enim nulla, odio ullam praesentium iste beatae hic necessitatibus perspiciatis magni. Similique repellendus ab fuga repudiandae aspernatur a.</p>
-                <a href="#link" class="section4-link">Buy Venedor Theme!</a>
-            </div>
-            <div class="col-6 justify-content-md-end">
-                <img src="./media/Electronics.jpg" alt="Electronics image" class="electronics-img img-fluid">
-            </div>
-        </div>
-    </div>
-</section>
-<section class="section section5">
-    <div class="container">
-        <div class="row">
-            <div class="col-10">
-                <h2 class="section5-header">Bestsellers</h2>
-            </div>
-            <div class="col-2">
-                <div class="box">
-                    <button><i class="bi bi-chevron-left justify-content-md-end"></i></button>
-                    <button><i class="bi bi-chevron-right"></i></button>
-                </div>    
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2">
-            <div class="col">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./media/Heels.jpg" class="heels-img img-fluid" alt="Heels image">
-                    <div class="card-body">
-                        <p class="card-text">Branded Heels</p>
-                        <a href="#" class="btn btn-primary">add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./media/purse.jpg" class="purse-img img-fluid" alt="Purse Image">
-                    <div class="card-body">
-                        <p class="card-text">Branded Purse</p>
-                        <a href="#" class="btn btn-primary">add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./media/blue-shoes.jpg" class="blue-shoes-img img-fluid" alt="Blue Shoes Image">
-                    <div class="card-body">
-                        <p class="card-text">Branded Dress Shoes</p>
-                        <a href="#" class="btn btn-primary">add to cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="./media/beige-coat.jpg" class="beige-coat-img img-fluid" alt="Beige Coat Image">
-                    <div class="card-body">
-                        <p class="card-text">Branded Coat</p>
-                        <a href="#" class="btn btn-primary">add to cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>        
-</section>
-<section class="section section6">
-    <div class="container">
-        <div class="row">
-            <div class="col-10">
-                <h2 class="section6-header">Manufacturers</h2>
-            </div>
-            <div class="col-2">
-                <div class="box">
-                    <button><i class="bi bi-chevron-left justify-content-md-end"></i></button>
-                    <button><i class="bi bi-chevron-right"></i></button>
-                </div>    
-            </div>
-        </div>
-        <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3">
-            <div class="col-2">
-                <img src="./media/Logo.jpg" alt="Logo Image" class="logo-img img-fluid">
-            </div>
-            <div class="col-2">
-                <img src="./media/Logo.jpg" alt="Logo Image" class="logo-img img-fluid">
-            </div>
-            <div class="col-2">
-                <img src="./media/Logo.jpg" alt="Logo Image" class="logo-img img-fluid">
-            </div>
-            <div class="col-2">
-                <img src="./media/Logo.jpg" alt="Logo Image" class="logo-img img-fluid">
-            </div>
-            <div class="col-2">
-                <img src="./media/Logo.jpg" alt="Logo Image" class="logo-img img-fluid">
-            </div>
-            <div class="col-2">
-                <img src="./media/Logo.jpg" alt="Logo Image" class="logo-img img-fluid">
-            </div>
-        </div>
-    </div>    
-</section>
-<footer class="footer">
-    <div class="section top-footer">
-        <div class="container">
-            <div class="row top-footer">
-                <div class="col-6 col-md-5">
-                    <h4 class="top-footer-text">sign up to receive the latest fashion news</h4>
-                </div>
-                <div class="col-4 col-md-3">
-                    <input type="text"name="searchbar" placeholder="Enter your email address" class="top-footer-search">
-                </div>
-                <div class="col-2 col-md-4">
-                    <button class="top-footer-btn">sign up</button>
-                </div>
-            </div>
-         </div>   
-    </div>
-    <div class="section middle-footer">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <section class="section2">
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <h4 class="middle-footer-header">my account</h4>
-                    <ul class="footer-square">
-                        <li><a href="link" class="footer-list">My Account</a></li>
-                        <li><a href="link" class="footer-list">Personal Information</a></li>
-                        <li><a href="link" class="footer-list">Addresses</a></li>
-                        <li><a href="link" class="footer-list">Discount</a></li>
-                        <li><a href="link" class="footer-list">Order History</a></li>
-                        <li><a href="link" class="footer-list">Your Vouchers</a></li>
-                    </ul>
+                <div class="col-md-4">
+                    <img src="./media/Free-Shipping.jpg" alt="Free Shipping Image" class="img-fluid d-block w-100 section2-img">
                 </div>
-                <div class="col-3">
-                    <h4 class="middle-footer-header">Information</h4>
-                    <ul class="footer-square">
-                        <li><a href="link" class="footer-list">New Products</a></li>
-                        <li><a href="link" class="footer-list">Top Selling</a></li>
-                        <li><a href="link" class="footer-list">Specials</a></li>
-                        <li><a href="link" class="footer-list">Manufacturers</a></li>
-                        <li><a href="link" class="footer-list">Suppliers</a></li>
-                        <li><a href="link" class="footer-list">Our Stores</a></li>
-                    </ul>
+                <div class="col-md-4">
+                    <img src="./media/Sale.jpg" alt="Sale Image" class="img-fluid d-block w-100 section2-img">
                 </div>
-                <div class="col-3">
-                    <h4 class="middle-footer-header">from twitter</h4>
-                    <p class="middle-footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugiat ipsa id eligendi sapiente ad natus assumenda <a href="https://twitter.com/AnnexDevs">https://twitter.com/AnnexDevs</a>.</p>
-
-                    <p class="middle-footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, at! Voluptate esse dolores vero ut <a href="https://twitter.com/AnnexDevs"></a>.</p>
-                </div>
-                <div class="col-3">
-                    <h5 class="middle-footer-header">facebook</h5>
-                    <img src="./media/Facebook-profiles.jpg" alt="Facebook Profiles Image" class="facebook-img img-fluid">
+                <div class="col-md-4">
+                    <img src="./media/New-Arrivals.jpg" alt="New Arrivals Image" class="img-fluid d-block w-100 section2-img">
                 </div>
             </div>
         </div>
-    </div>
-    <div class="section bottom-footer">
+    </section>
+    <section class="section3">
         <div class="container">
-            <div class="row bottom-footer">
+            <div class="row">
                 <div class="col-6">
-                    <button class="icons"><i class="bi bi-facebook"></i></button>
-                    <button class="icons"><i class="bi bi-twitter"></i></button>
-                    <button class="icons"><i class="bi bi-rss-fill"></i></button>
-                    <button class="icons"><i class="bi bi-reception-4"></i></button>
-                    <button class="icons"><i class="bi bi-github"></i></button>
-                    <button class="icons"><i class="bi bi-pinterest"></i></button>
-                    <button class="icons"><i class="bi bi-skype"></i></button>
-                    <button class="icons"><i class="bi bi-envelope-fill"></i></button>
+                    <h2 class="latest">Latest</h2>
                 </div>
                 <div class="col-6">
-                    <p class="bottom-footer-text">&copy;2012 Powered by AnnexDevelopment&trade;. All Rights Reserved.</p>
+                    <p class="btn-text text-end">
+                        <button class="left-btn"><i class="bi bi-chevron-left"></i></button>
+                        <button class="right-btn"><i class="bi bi-chevron-right"></i></button>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="./media/Bracelet.jpg" class="trench-coat-img img-fluid" alt="Bracelet image">
+                        <div class="card-body">
+                            <p class="card-text">Jewelry Bracelet Cara Accessories</p>
+                            <a href="#" class="btn btn-primary">add to cart</a>
+                        </div>
+                    </div>   
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="./media/Trench-Coat.jpg" class="trench-coat-img img-fluid" alt="Trench Coat Image">
+                        <div class="card-body">
+                            <p class="card-text">Jessica London Short Trench Coat</p>
+                            <a href="#" class="btn btn-primary">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="./media/Gloves.jpg" class="gloves-img img-fluid" alt="Gloves Image">
+                        <div class="card-body">
+                            <p class="card-text">Mocca Stretch Leather Gloves</p>
+                            <a href="#" class="btn btn-primary">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="./media/Sweater.jpg" class="sweater-img" alt="Sweater Image">
+                        <div class="card-body">
+                            <p class="card-text">Limited Edition Knitted Sweater</p>
+                            <a href="#" class="btn btn-primary">add to cart</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-</footer>
-</main>
+    </section>
+    <section class="section4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section4-header">Welcome to Venedor</h2>
+                    <p class="section4-text">Venedor is a fully responsive PSD theme designed for all types of platforms.Woocommerce, Magento, OpenCart, PrestaShop and other based on Bootstrap's 12 column 1200px responsive grid template. Great looks on desktop, tablets, and mobile.</p>
+                    <p class="section4-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio magnam ipsa nostrum fugit corporis aliquid molestias culpa nemo totam sequi veritatis dignissimos labore enim nulla, odio ullam praesentium iste beatae hic necessitatibus perspiciatis magni. Similique repellendus ab fuga repudiandae aspernatur a.</p>
+                    <a href="#link" class="section4-link">Buy Venedor Theme!</a>
+                </div>
+                <div class="col-lg-6 justify-content-md-end">
+                    <img src="./media/Electronics.jpg" alt="Electronics image" class="electronics-img img-fluid d-block w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="section5-header">Bestsellers</h2>
+                </div>
+                <div class="col-6">
+                    <p class="btn-text text-end">
+                        <button class="left-btn"><i class="bi bi-chevron-left"></i></button>
+                        <button class="right-btn"><i class="bi bi-chevron-right"></i></button>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="./media/Heels.jpg" class="heels-img img-fluid" alt="Heels image">
+                        <div class="card-body">
+                            <p class="card-text">Branded Heels</p>
+                            <a href="#" class="btn btn-primary">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="./media/purse.jpg" class="purse-img img-fluid" alt="Purse Image">
+                        <div class="card-body">
+                            <p class="card-text">Branded Purse</p>
+                            <a href="#" class="btn btn-primary">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="./media/blue-shoes.jpg" class="blue-shoes-img img-fluid" alt="Blue Shoes Image">
+                        <div class="card-body">
+                            <p class="card-text">Branded Dress Shoes</p>
+                            <a href="#" class="btn btn-primary">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="./media/beige-coat.jpg" class="beige-coat-img img-fluid" alt="Beige Coat Image">
+                        <div class="card-body">
+                            <p class="card-text">Branded Coat</p>
+                            <a href="#" class="btn btn-primary">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section6">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="section6-header">Manufacturers</h2>
+                </div>
+                <div class="col-6">
+                    <p class="btn-text text-end">
+                        <button class="left-btn"><i class="bi bi-chevron-left"></i></button>
+                        <button class="right-btn"><i class="bi bi-chevron-right"></i></button>
+                    </p>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-4 col-md-2">
+                    <img src="./media/Logo.jpg" alt="Logo Image" class="logo-img img-fluid">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="./media/Logo.jpg" alt="Logo Image" class="logo-img img-fluid">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="./media/Logo.jpg" alt="Logo Image" class="logo-img img-fluid">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="./media/Logo.jpg" alt="Logo Image" class="logo-img img-fluid">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="./media/Logo.jpg" alt="Logo Image" class="logo-img img-fluid">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="./media/Logo.jpg" alt="Logo Image" class="logo-img img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <section class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="top-footer-text text-center text-md-start">sign up to receive the latest fashion news</h3>
+                    </div>
+                    <div class="col-md-6 d-lg-flex justify-content-lg-end">
+                        <input type="text" placeholder="Enter your email address..." name="email-bar" class="email-bar">
+                        <button class="sign-up-btn">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5 class="bottom-footer-header">My Account</h5>
+                        <ul class="footer-square">
+                            <li><a href="link" class="footer-list">My Account</a></li>
+                            <li><a href="link" class="footer-list">Personal Information</a></li>
+                            <li><a href="link" class="footer-list">Addresses</a></li>
+                            <li><a href="link" class="footer-list">Discount</a></li>
+                            <li><a href="link" class="footer-list">Order History</a></li>
+                            <li><a href="link" class="footer-list">Your Vouchers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="bottom-footer-header">Information</h5>
+                        <ul class="footer-square">
+                            <li><a href="link" class="footer-list">New Products</a></li>
+                            <li><a href="link" class="footer-list">Top Selling</a></li>
+                            <li><a href="link" class="footer-list">Specials</a></li>
+                            <li><a href="link" class="footer-list">Manufacturers</a></li>
+                            <li><a href="link" class="footer-list">Suppliers</a></li>
+                            <li><a href="link" class="footer-list">Our Stores</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="bottom-footer-header">from twitter</h5>
+                        <p class="middle-footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugiat ipsa id eligendi sapiente ad natus assumenda <a href="https://twitter.com/AnnexDevs">https://twitter.com/AnnexDevs</a>.</p>
+
+                        <p class="middle-footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, at! Voluptate esse dolores vero ut <a href="https://twitter.com/AnnexDevs"></a>.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="bottom-footer-header">from facebook</h5>
+                        <img src="./media/Facebook-profiles.jpg" alt="Facebook Profiles Image" class="facebook-img img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <div class="footer-box">
+                            <button class="icons social-btns"><i class="bi bi-facebook"></i></button>
+                            <button class="icons social-btns"><i class="bi bi-twitter"></i></button>
+                            <button class="icons social-btns"><i class="bi bi-rss-fill"></i></button>
+                            <button class="icons social-btns"><i class="bi bi-reception-4"></i></button>
+                            <button class="icons social-btns"><i class="bi bi-github"></i></button>
+                            <button class="icons social-btns"><i class="bi bi-pinterest"></i></button>
+                            <button class="icons social-btns"><i class="bi bi-skype"></i></button>
+                            <button class="icons social-btns"><i class="bi bi-envelope-fill"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="  copyright-text">&copy;2012 Powered by AnnexDevelopment&trade;. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
